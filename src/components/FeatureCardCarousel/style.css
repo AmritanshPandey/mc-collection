@@ -1,0 +1,105 @@
+.main-carousel-container {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 20px;
+    gap: 16px;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-card {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color:  var(--black-surface);
+    color: var(--white-text);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  .carousel-content {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+  }
+
+  .carousel-title {
+    color: var(--white-text);
+  }
+  
+  .carousel-content button {
+    background-color:  var( --primary-color);
+    color: var(--white-text);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    width: 120px;
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    padding: 0 10px;
+  }
+  
+  .carousel-buttons button {
+    background-color: var( --primary-surface);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var( --grey-100);
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  
+  .carousel-dots .active {
+    background-color: var( --primary-color);
+  }
+  

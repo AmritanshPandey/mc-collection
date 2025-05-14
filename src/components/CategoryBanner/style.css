@@ -1,0 +1,53 @@
+/* src/components/HeroBanner.css */
+.category-banner {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  /* adjust for mobile */
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 20% black overlay */
+}
+
+.category-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.category-title {
+  color: var(--white-text);
+  margin-bottom: 16px;
+}
+
+.category-button {
+  background-color: #ffffff00;
+  color: var(--white-text);
+  padding: 8px 24px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: var(--primary-surface) 1px solid;
+  font-size: 12px;
+}
+
+.category-button:hover {
+  background-color: var(--white-text);
+  color: var(--primary-text);
+}

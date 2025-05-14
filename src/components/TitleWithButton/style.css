@@ -1,0 +1,26 @@
+.hotspot-text-button-container {
+    display: flex;
+    margin: 0 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.hotspot-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotspot-body-text-container {
+    width: 100%;
+}
+
+.view-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    width: 40%;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: 500;
+}

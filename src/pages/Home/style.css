@@ -1,0 +1,21 @@
+.main-banner {
+    width: 100%;
+}
+
+.header-text-container{
+    text-align: center;
+    margin: 20px 32px;
+}
+
+.category-lisitng-container {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.faq-banner {
+    width: 100%;
+}
+

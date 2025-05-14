@@ -1,0 +1,61 @@
+.experience-card {
+    flex: 0 0 auto;
+    width: 240px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-right: 16px;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img:first-child {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .mastercard-logo {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 30px;
+  }
+  
+  .restaurant-details {
+    padding: 12px;
+  }
+  
+  .restaurant-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00754a;
+    margin-bottom: 4px;
+  }
+  
+  .restaurant-location,
+  .restaurant-chef {
+    font-size: 13px;
+    color: #333;
+    margin: 2px 0;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .tag {
+    background: #000;
+    color: #fff;
+    border-radius: 16px;
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+  }
+  

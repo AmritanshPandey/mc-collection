@@ -1,0 +1,32 @@
+.experience-carousel-wrapper {
+    padding: 16px;
+  }
+  
+  .experience-carousel-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .experience-carousel-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+  }
+  
+  .experience-carousel-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .experience-carousel-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .experience-carousel-scroll::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  

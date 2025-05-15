@@ -79,6 +79,7 @@ label {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 12px;
+  line-height: 18px;
 }
 
 body { 
@@ -104,20 +105,20 @@ body {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 16px;
-  color: var(--primary-text);
+  line-height: 24px;
 }
 
 .subheading-medium {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 16px;
-  color: var(--primary-text);
+  line-height: 24px;
 }
 .subheading-bold {
   font-family: "MarkforMC";
   font-weight: 600;
   font-size: 16px;
-  color: var(--primary-text);
+  line-height: 24px;
 }
 
 button {

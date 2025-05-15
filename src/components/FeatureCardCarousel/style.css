@@ -49,15 +49,7 @@
     color: var(--white-text);
   }
   
-  .carousel-content button {
-    background-color:  var( --primary-color);
-    color: var(--white-text);
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    cursor: pointer;
-    width: 120px;
-  }
+
   
   .carousel-buttons {
     position: absolute;
@@ -103,3 +95,23 @@
     background-color: var( --primary-color);
   }
   
+
+  .book-now-button {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color:  var( --primary-color);
+    color: var(--white-text);
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    width: 120px;
+}
+
+.book-now-button:hover {
+    background-color: #005f3c;
+}

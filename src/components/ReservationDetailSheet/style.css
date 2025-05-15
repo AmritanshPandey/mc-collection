@@ -1,0 +1,74 @@
+.bottom-sheet-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .bottom-sheet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 16px;
+    animation: slideUp 0.3s ease;
+    height: 85%;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+  .sheet-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+    align-items: center;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+  }
+  
+  .restaurant-name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .details {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .modify-link {
+    color: #00754a;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 8px 0 12px;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  .price-row.total {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  

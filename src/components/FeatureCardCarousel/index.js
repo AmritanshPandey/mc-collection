@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 const FeatureCardCarousel = ({ items = [], autoSlideInterval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,7 +34,7 @@ const FeatureCardCarousel = ({ items = [], autoSlideInterval = 5000 }) => {
     }
   }, [currentIndex, items.length]);
 
-  // ✅ Safe guard AFTER hooks
+
   if (!items.length) {
     return <div style={{ textAlign: 'center', padding: '20px' }}>No items to display.</div>;
   }
@@ -51,7 +52,7 @@ const FeatureCardCarousel = ({ items = [], autoSlideInterval = 5000 }) => {
               <img src={item.image} alt={item.title} />
               <div className="carousel-content">
                 <span className='heading carousel-title'>{item.title}</span>
-                <button>Book Now</button>
+                <Link to="/peak" className="book-now-button">Book Now</Link>
               </div>
             </div>
           ))}

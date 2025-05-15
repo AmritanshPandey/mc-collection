@@ -1,18 +1,18 @@
 import React from 'react';
-import './RestaurantCard.css';
-import MastercardLogo from '../../assets/icons/mastercard.svg'; 
+import './style.css';
+import MastercardLogo from '../../assets/icons/mc-logo.svg'; 
 
-const ExperienceCard = ({ image, name, location, chef, tags }) => {
+const ExperienceCard = ({ image, name, location, person, tags }) => {
   return (
-    <div className="restaurant-card">
-      <div className="image-container">
+    <div className="experience-card">
+      <div className="experience-image-container">
         <img src={image} alt={name} />
-        <img src={MastercardLogo} alt="Mastercard" className="mastercard-logo" />
+        <img src={MastercardLogo} alt="Mastercard" className="experience-mastercard-logo" />
       </div>
-      <div className="restaurant-details">
-        <h4 className="restaurant-title">{name}</h4>
-        <p className="restaurant-location">{location}</p>
-        <p className="restaurant-chef">{chef}</p>
+      <div className="experience-details">
+        <span className="subheading-medium experience-title">{name}</span>
+        <p className="experience-location">{location}</p>
+        <p className="experience-person">{person}</p>
         <div className="tags">
           {tags.map((tag, index) => (
             <span key={index} className="tag">{tag}</span>

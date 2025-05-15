@@ -15,7 +15,7 @@ const Home = () => {
   const navigate = useNavigate();    // ✅ correct way to get navigate function
 
   return (
-    <div>
+    <div className='page-content'>
       <div className='header-section'>
         <MainHeader />
         <img src={MainBanner} className='main-banner' alt="Main Banner" />
@@ -45,7 +45,6 @@ const Home = () => {
           image={EntertainementBanner}
           title="Entertainment"
           buttonText="Explore"
-          onButtonClick={() => alert('Entertainment Clicked')}
         />
       </div>
 

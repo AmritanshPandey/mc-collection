@@ -3,9 +3,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import "./global.css";
 import AppRoutes from './AppRoutes';
 import LandingPage from './LandingPage';
-import MCLogo from './assets/icons/mc-logo.svg';
-import ShareIcon from './assets/icons/ios-share.svg';
-import ArrowDown from './assets/icons/arrow-down.svg';
+// import MCLogo from './assets/icons/mc-logo.svg';
+// import ShareIcon from './assets/icons/ios-share.svg';
+// import ArrowDown from './assets/icons/arrow-down.svg';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(window.matchMedia("(min-width: 768px)").matches);
@@ -29,6 +30,8 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
+      {/* 
       {!isDesktop && showAddToHomeScreen ? (
         <div className='mweb-container'>
           <div className='mastercard-logo'>
@@ -38,14 +41,14 @@ function App() {
             <span className='title1'>Mastercard Collection</span>
             <div style={{ height: "0px" }}></div>
             <div style={{width: "60%" , margin: "0 auto"}}>
-            <span className='subheading3'>Experience the app on your phone</span>
-          </div></div>
+              <span className='subheading3'>Experience the app on your phone</span>
+            </div>
+          </div>
           <div style={{ height: "1px", backgroundColor: "#C8C8C8" }}></div>
           <div className='mweb-info-container'>
             <span className='subheading3' onClick={handleAddToHomeScreenClick} >
-            This app requires iPhone 7 or above with the latest iOS and must be opened using Safari.
+              This app requires iPhone 7 or above with the latest iOS and must be opened using Safari.
             </span>
-           
           </div>
           <div className='share-icon-text-container'>
             <span className='title3'>You are just two taps away:</span>
@@ -66,8 +69,9 @@ function App() {
           </div>
         </div>
       ) : (
-        isDesktop ? <LandingPage /> : <AppRoutes />
-      )}
+      */}
+        {isDesktop ? <LandingPage /> : <AppRoutes />}
+      {/* ) */}
     </Router>
   );
 }

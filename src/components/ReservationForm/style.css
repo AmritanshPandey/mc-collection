@@ -1,0 +1,134 @@
+.reservation-card {
+    background: var(--primary-surface);
+    margin: 16px;
+}
+
+.restaurant-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.location-box {
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.form-section {
+    margin-top: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Guests dropdown */
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.date-pill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00754a;
+    border-radius: 999px;
+    padding: 0 12px;
+    height: 32px;
+    cursor: pointer;
+    background-color: white;
+    min-width: 180px;
+}
+
+.date-pill span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.calendar-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(24%) sepia(95%) saturate(323%) hue-rotate(124deg) brightness(92%) contrast(92%);
+}
+
+
+.date-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Time grid */
+.time-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 buttons per row */
+    gap: 8px;
+    margin-top: 12px;
+}
+
+/* Time button base style */
+
+.available-times {
+    margin: 24px 0;
+}
+.time-btn {
+    border: 1px solid #00754a;
+    border-radius: 8px;   
+    background: white;
+    color: #00754a;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+/* On hover */
+.time-btn:hover {
+    background-color: #00754a;
+    color: #fff;
+}
+
+/* Selected time button */
+.time-btn.selected {
+    background-color: #00754a;
+    color: #fff;
+    border-color: #00754a;
+}
+
+/* Selected time button */
+.time-btn.selected {
+    background-color: #00754a;
+    color: white;
+}
+
+/* Special Request box */
+.special-request textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 96px;
+    border: 1px solid #00754a;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #00754a;
+    font-family: inherit;
+    resize: vertical;  
+    box-sizing: border-box;  
+}
+

@@ -1,0 +1,19 @@
+.time-grid-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .time-button {
+    padding: 8px 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background: white;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  .time-button.selected {
+    background-color: var(--primary-color);
+    color: white;
+  }

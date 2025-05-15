@@ -85,11 +85,18 @@ body {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 14px;
+  line-height: 21px;
 }
 
 .body-medium {
   font-family: "MarkforMC";
   font-weight: 500;
+  font-size: 14px;
+}
+
+.body-bold {
+  font-family: "MarkforMC";
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -103,6 +110,12 @@ body {
 .subheading-medium {
   font-family: "MarkforMC";
   font-weight: 500;
+  font-size: 16px;
+  color: var(--primary-text);
+}
+.subheading-bold {
+  font-family: "MarkforMC";
+  font-weight: 600;
   font-size: 16px;
   color: var(--primary-text);
 }
@@ -174,6 +187,7 @@ input {
   font-weight: 500;
   font-size: 24px;
   color: var(--primary-text);
+  line-height: 36px;
 }
 
 .headline {
@@ -391,4 +405,8 @@ flex-direction: column;
 
 .icon24 {
   height: 24px;
+}
+
+.page-content {
+  padding-top: 56px;
 }

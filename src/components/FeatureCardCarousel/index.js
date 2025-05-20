@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const FeatureCardCarousel = ({ items = [], autoSlideInterval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,9 +10,9 @@ const FeatureCardCarousel = ({ items = [], autoSlideInterval = 5000 }) => {
     setCurrentIndex((prev) => (prev + 1) % items.length);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
+  // };
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
@@ -52,7 +52,8 @@ const FeatureCardCarousel = ({ items = [], autoSlideInterval = 5000 }) => {
               <img src={item.image} alt={item.title} />
               <div className="carousel-content">
                 <span className='heading carousel-title'>{item.title}</span>
-                <Link to="/peak" className="book-now-button">Book Now</Link>
+                {/* <Link to="/peak" className="book-now-button">Book Now</Link> */}
+                <div to="/peak" className="book-now-button">Book Now</div>
               </div>
             </div>
           ))}

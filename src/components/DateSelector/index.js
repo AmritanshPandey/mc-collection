@@ -43,7 +43,7 @@ const DateSelectorModal = ({ selectedDate, onDateSelect, onClose }) => {
                 <div className="date-modal-header">
                     <span className='title-medium'>{monthNames[month]} {year}</span>
                     <button className="close-btn" onClick={onClose}>
-                        <img src={CloseIcon} />
+                        <img src={CloseIcon} alt='close' />
                     </button>
                 </div>
 

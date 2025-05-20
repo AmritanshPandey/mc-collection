@@ -39,9 +39,8 @@
   
   .experience-location,
   .experience-person {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--primary-text);
-    margin: 2px 0;
   }
   
   .tags {
@@ -63,4 +62,10 @@
   .experience-card-link {
     text-decoration: none;
     color: inherit;
+  }
+
+  .experience-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }

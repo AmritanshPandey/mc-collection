@@ -270,6 +270,14 @@ flex-direction: column;
  --error-icon: #ee0000;
 }
 
+.white {
+  color: var(--white);
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
  /* Landing Page */
 .mweb-container {
   display: flex;
@@ -312,6 +320,13 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 8px;
+}
+
+.share-icon-text-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin-bottom: 8px;
 }
 
@@ -362,11 +377,13 @@ flex-direction: column;
   font-size: 6vh;
   color: white;
   font-weight: 500;
+  line-height: 7vh;
 }
 
 .df-body {
   font-size: 2vh;
-  color: white
+  color: white;
+  line-height: 3vh;
 }
 
 .digital-first-body-text-container {

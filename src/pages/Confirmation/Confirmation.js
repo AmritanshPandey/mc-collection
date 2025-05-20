@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import './style.css';
 import PeakImage from '../../assets/images/peak.png';
 import ReviewCalendarIcon from '../../assets/icons/calendar-days.svg';
@@ -27,11 +27,11 @@ const ConfirmationPage = () => {
                     <div className="confirmation-info">
                         <span className="restaurant-name">Peak with Priceless</span>
                         <div className="reservation-details">
-                            <img src={ReviewCalendarIcon} alt="" />
+                            <img src={ReviewCalendarIcon} alt="calendar" />
                             <span>{reservation.date} at {reservation.time}</span>
                         </div>
                         <div className="reservation-details">
-                            <img src={ReviewUserIcon} alt="" />
+                            <img src={ReviewUserIcon} alt="review" />
                             <span>{reservation.guests} guests</span>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const ConfirmationPage = () => {
 
 
                 <div className="confirmation-price">
-                    <div className='confirmation-price-item' style={{marginBottom:"16px"}}>
+                    <div className='confirmation-price-item' style={{ marginBottom: "16px" }}>
                         <span className='body-bold'>Reservation</span>
                         <span className='body-bold'>$0.00</span>
                     </div>
@@ -56,6 +56,21 @@ const ConfirmationPage = () => {
                         <span className='subheading-bold'>Reservation</span>
                         <span className='subheading-bold'>$0.00</span>
                     </div>
+                    <div style={{textAlign:"center", marginTop: "24px"}}>
+                        <Link to="/" style={{
+                            display: 'inline-block',
+                            marginTop: '20px',
+                            padding: '12px 24px',
+                            backgroundColor: '#00754a',
+                            color: '#fff',
+                            textDecoration: 'none',
+                            borderRadius: '50px',
+                            fontWeight: "500",
+                        }}>
+                            Go back to Home Page
+                        </Link>
+                    </div>
+
                 </div>
             </div>
         </div>

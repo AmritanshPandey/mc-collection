@@ -5,20 +5,24 @@
     width: 100%;
     background-color: #00754a;
     z-index: 9999;
-    height: 56px;
+    height: 72px;
 }
 
 .sticky-reserve-button button {
     width: 100%;
+    height: 72px;
     border: none;
     background-color: #00754a;
     color: white;
     font-size: 16px;
     font-weight: 600;
-    padding: 16px 0;
+    padding: 8px 0 24px;
     cursor: pointer;
-    border-top: 1px solid #00633e;
+    border-top: 1px solid #ffffff;
     transition: opacity 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Disabled style */
@@ -27,8 +31,8 @@
     cursor: not-allowed;
     border-top: 1px solid #ccc;
     color: var(--grey-500); 
-    height: 56px;
 }
+
 .experience-text-container {
     margin: 24px 24px 0;
     margin-bottom: 12px;

@@ -10,7 +10,7 @@ const ReservationDetailsSheet = ({ reservation, onClose }) => {
                 <div className="sheet-header">
                     <span>Reservation</span>
                     <button className="close-btn" onClick={onClose}>
-                        <img src={CloseIcon} />
+                        <img src={CloseIcon}  alt='icon' />
                     </button>
                 </div>
 

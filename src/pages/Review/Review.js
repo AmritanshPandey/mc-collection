@@ -10,6 +10,7 @@ import ChevronDown from '../../assets/icons/chevron-down-black.svg';
 import ReservationDetailsSheet from '../../components/ReservationDetailSheet';
 import MCLogo from '../../assets/icons/mc-logo.svg';
 import ApplePay from '../../assets/icons/apay.svg';
+import Spacer from '../../components/Spacer';
 
 const ReviewPage = () => {
   const location = useLocation();
@@ -87,23 +88,23 @@ const ReviewPage = () => {
               {activeStep === 2 && (
                 <div className="simple-form">
                   <div className='card-info-container'>
-                    <img src={MCLogo} className='review-mc-logo' />
+                    <img src={MCLogo} className='review-mc-logo'  alt='logo' />
                     <div className='card-subinfo-container'>
                       <span className='body-medium'>Reservations are only available to Mastercard cardholders.</span>
                       <span>Select an option below to enter your Mastercard card number to verify eligibility and assist in booking reservations.</span>
                       <div className='add-card-container'>
-                        <img src={MCLogo} className='review-mc-logo' />
+                        <img src={MCLogo} className='review-mc-logo'  alt='logo' />
                         <span className='body-medium'>Mastercard ending in •••• 1234</span>
                       </div>
                       <div className='add-card-container-space'>
                         <div className='add-card-inner-container'>
-                          <img src={MCLogo} className='review-mc-logo' />
+                          <img src={MCLogo} className='review-mc-logo'  alt='logo' />
                           <span className='body-medium'>Add a Mastercard</span>
                         </div>
-                        <img src={ChevronDown} className='review-mc-logo' />
+                        <img src={ChevronDown} className='review-mc-logo'  alt='icon' />
                       </div>
                       <div className='add-card-container'>
-                        <img src={ApplePay} className='review-mc-logo' />
+                        <img src={ApplePay} className='review-mc-logo'  alt='apple' />
                         <span className='body-medium'>Add a Mastercard with Apple Pay</span>
                       </div>
                     </div>
@@ -172,16 +173,17 @@ const ReviewPage = () => {
               </div>
             )}
           </div>
-
+          <Spacer height={86} />
           {/* Sticky Reservation Bar */}
           <div className="reservation-bar" onClick={() => setShowSheet(true)}>
             <div className='reservation-bar-text'>
               <span>Reservation Details</span>
-              <img src={ChevronUp} alt="chevron" />
+              <img src={ChevronUp} alt="chevron" className='icon24' />
             </div>
-            <span>USD $0.00</span>
+            <div className='reservation-bar-text'>
+              <span>USD $0.00</span>
+            </div>
           </div>
-
           {/* Bottom Sheet */}
           {showSheet && (
             <ReservationDetailsSheet

@@ -10,7 +10,7 @@ import Cat from '../src/assets/icons/cat.svg'
 function NotFoundPage() {
   return (
     <div style={{ textAlign: 'center', padding: '50px' }}>
-      <img src={Cat} />
+      <img src={Cat} alt='cat' />
       <h2>Page doesn't exist</h2>
       <p>The page you are looking for was not found.</p>
       <Link to="/" style={{

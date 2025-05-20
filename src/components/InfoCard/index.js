@@ -8,14 +8,14 @@ const InfoCard = ({ infoItems = [], location = "" }) => {
       <div className="info-box">
         {infoItems.map((item, index) => (
           <div key={index} className="info-item">
-            <img src={item.icon} alt="" className="info-icon" /> 
+            <img src={item.icon} alt="icon" className="info-icon" /> 
            <span className='body-bold'> {item.text} </span>
           </div>
         ))}
       </div>
 
       <div className="location-box">
-        <img src={MapIcon} style={{height: "24px"}} />
+        <img src={MapIcon} style={{height: "24px"}}  alt='icon' />
         <span className='map-location'> {location}</span> <a href="#">Map it</a>
       </div>
     </div>

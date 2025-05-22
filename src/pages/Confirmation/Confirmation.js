@@ -1,18 +1,42 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './style.css';
 import PeakImage from '../../assets/images/peak.png';
 import ReviewCalendarIcon from '../../assets/icons/calendar-days.svg';
 import ReviewUserIcon from '../../assets/icons/user.svg';
 import MainHeader from '../../components/Header/MainHeader';
+import Notification from '../../components/AppNotification';
+import Gmail from '../../assets/images/gmail.png'
 
 const ConfirmationPage = () => {
     const location = useLocation();
     const reservation = location.state;
 
+    const [showNotification, setShowNotification] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowNotification(true);
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
+
         <div className="page-content">
             <MainHeader />
+
+            <Notification
+                visible={showNotification}
+                icon={Gmail}
+                sender="Guest.Tech"
+                title="Reservation Confirmed"
+                message="Your reservation request at Peak with Priceless has been confirmed!"
+                navigateTo="/email"
+                data={reservation} 
+            />
+
 
             <div className="confirmation-page">
                 <h2>Thanks for your request!</h2>
@@ -56,7 +80,7 @@ const ConfirmationPage = () => {
                         <span className='subheading-bold'>Reservation</span>
                         <span className='subheading-bold'>$0.00</span>
                     </div>
-                    <div style={{textAlign:"center", marginTop: "24px"}}>
+                    {/* <div style={{ textAlign: "center", marginTop: "24px" }}>
                         <Link to="/" style={{
                             display: 'inline-block',
                             marginTop: '20px',
@@ -69,11 +93,12 @@ const ConfirmationPage = () => {
                         }}>
                             Go back to Home Page
                         </Link>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
         </div>
+
     );
 };
 

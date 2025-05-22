@@ -89,6 +89,12 @@ body {
   line-height: 21px;
 }
 
+.body { 
+  font-family: "MarkforMC";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
 .body-medium {
   font-family: "MarkforMC";
   font-weight: 500;
@@ -171,7 +177,6 @@ input {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 20px;
-  color: var(--primary-text);
   line-height: 30px;
 }
 
@@ -179,7 +184,6 @@ input {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 24px;
-  color: var(--primary-text);
   line-height: 36px;
 }
 
@@ -187,7 +191,6 @@ input {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 24px;
-  color: var(--primary-text);
   line-height: 36px;
 }
 
@@ -195,14 +198,12 @@ input {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 28px;
-  color: var(--primary-text);
 }
 
 .headline-light {
   font-family: "MarkforMC";
   font-weight: 300;
   font-size: 28px;
-  color: var(--primary-text);
 }
 
 
@@ -276,6 +277,7 @@ flex-direction: column;
 
 .primary {
   color: var(--primary-color);
+  font-weight: 500;
 }
 
  /* Landing Page */
@@ -307,6 +309,23 @@ flex-direction: column;
   line-height: 21px;
 }
 
+button.primary {
+  background-color: #00754a;
+  color: #fff;
+  border: none;
+}
+
+button.outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+button.disabled {
+  background-color: var(--grey-300);
+  color: #fff;
+  border: none;
+}
 
 
 .share-icon-container {
@@ -427,4 +446,19 @@ flex-direction: column;
 
 .page-content {
   padding-top: 56px;
+}
+
+.page-animated {
+  animation: appSwitchIn 0.4s ease both;
+}
+
+@keyframes appSwitchIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

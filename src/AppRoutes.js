@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Dining from './pages/Dining/Dining';
@@ -6,6 +5,10 @@ import Peak from './pages/Dining/Experience/Peak';
 import ReviewPage from './pages/Review/Review';
 import ConfirmationPage from './pages/Confirmation/Confirmation';
 import Cat from '../src/assets/icons/cat.svg'
+import EmailView from './pages/EmailView';
+import CancelExperience from './pages/CancelExperience/CancelExperience';
+import Canceled from './pages/CancelExperience/Canceled';
+import EmailCancel from './pages/EmailView/EmailCancel';
 
 function NotFoundPage() {
   return (
@@ -38,7 +41,10 @@ function AppRoutes() {
         <Route path="/peak" element={<Peak />} />
         <Route path="/review" element={<ReviewPage />} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
-        {/* ✅ Catch-all route */}
+        <Route path="/email" element={<EmailView />} />
+        <Route path="/email-cancel" element={<EmailCancel />} />
+        <Route path="/cancel" element={<CancelExperience />} />
+        <Route path="/canceled" element={<Canceled />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

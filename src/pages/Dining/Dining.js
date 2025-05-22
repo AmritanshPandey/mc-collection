@@ -1,4 +1,3 @@
-import React from 'react';
 import MainHeader from '../../components/Header/MainHeader';
 import DinningBanner from "../../assets/images/dining-page-banner.png";
 import './style.css';

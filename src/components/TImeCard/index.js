@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './style.css';
 
 const TimeGrid = ({ times, selectedTime, onSelectTime }) => {

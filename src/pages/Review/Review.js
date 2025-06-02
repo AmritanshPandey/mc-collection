@@ -11,6 +11,7 @@ import ReservationDetailsSheet from '../../components/ReservationDetailSheet';
 import MCLogo from '../../assets/icons/mc-logo.svg';
 import ApplePay from '../../assets/icons/apay.svg';
 import Spacer from '../../components/Spacer';
+import BackHeader from '../../components/Header/BackHeader';
 
 const ReviewPage = () => {
   const location = useLocation();
@@ -26,7 +27,7 @@ const ReviewPage = () => {
   return (
     <div className='page-content'>
       <div className='header-section'>
-        <MainHeader />
+      <BackHeader />
       </div>
 
       {reservation ? (

@@ -41,9 +41,7 @@ const FeatureCardCarousel = ({ items = [], autoSlideInterval = 5000 }) => {
 
   return (
     <div className='main-carousel-container'>
-        <div className='carousel-heading-container'>
-      <span className='heading-medium'>Featured restaurants</span>
-        </div>
+      
 
       <div className="carousel-container">
         <div className="carousel-slide" ref={slideRef}>

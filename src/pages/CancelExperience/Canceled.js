@@ -31,6 +31,7 @@ const Canceled = () => {
         <div className='page-content'>
             <div className='header-section'>
                 <MainHeader />
+                
                 <img src={PeakBanner} className='main-banner' alt="Peak" />
             </div>
 

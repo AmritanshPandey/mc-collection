@@ -89,12 +89,6 @@ body {
   line-height: 21px;
 }
 
-.body { 
-  font-family: "MarkforMC";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-}
 .body-medium {
   font-family: "MarkforMC";
   font-weight: 500;
@@ -177,6 +171,7 @@ input {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 20px;
+  color: var(--primary-text);
   line-height: 30px;
 }
 
@@ -184,6 +179,7 @@ input {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 24px;
+
   line-height: 36px;
 }
 
@@ -277,7 +273,6 @@ flex-direction: column;
 
 .primary {
   color: var(--primary-color);
-  font-weight: 500;
 }
 
  /* Landing Page */
@@ -309,23 +304,6 @@ flex-direction: column;
   line-height: 21px;
 }
 
-button.primary {
-  background-color: #00754a;
-  color: #fff;
-  border: none;
-}
-
-button.outline {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-button.disabled {
-  background-color: var(--grey-300);
-  color: #fff;
-  border: none;
-}
 
 
 .share-icon-container {
@@ -362,79 +340,7 @@ button.disabled {
   animation: moveUpDown 2s ease-in-out infinite; 
 }
 
-.landingpage-main-container {
-  background-color: #141414;
-  height: 100vh;
-}
 
-.mc-circle-container {
-  position: absolute;
-  top: 4vh;
-  right: 0;
-  z-index: 0;
-}
-
-.landing-page-info-container {
-  display: flex;
-  padding: 6vh 16vw;
-  z-index: 10;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.info-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-}
-
-.landing-mc-logo {
-  height: 6vh;
-}
-
-.digital-first-title {
-  font-size: 6vh;
-  color: white;
-  font-weight: 500;
-  line-height: 7vh;
-}
-
-.df-body {
-  font-size: 2vh;
-  color: white;
-  line-height: 3vh;
-}
-
-.digital-first-body-text-container {
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-}
-
-.qr-code-image {
-  height: 22vh;
-  border-radius: 10%;
-}
-
-.info-ui-image-container {
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-
-}
-
-.df-caption {
-  font-size: 1.5vh;
-  color: white;
-  font-style: italic;
-}
-
-.app-ui {
-  width: 18vw;
-}
 
 .icon16 {
   height: 16px;

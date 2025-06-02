@@ -6,6 +6,7 @@ import ActionCard from '../../../components/ActionCard';
 import Spacer from '../../../components/Spacer';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../../components/Footer';
+import BackHeader from '../../../components/Header/BackHeader';
 
 const Peak = () => {
   const [formData, setFormData] = useState({});
@@ -18,7 +19,7 @@ const Peak = () => {
   return (
     <div className='page-content'>
       <div className='header-section'>
-        <MainHeader />
+<BackHeader />
         <img src={PeakBanner} className='main-banner' alt="Peak" />
       </div>
 

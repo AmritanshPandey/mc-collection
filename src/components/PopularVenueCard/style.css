@@ -1,0 +1,41 @@
+.popular-venue-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.popular-venue-card {
+  border-radius: 8px;
+  border: 1px solid var(--grey-100); 
+  transition: border 0.3s ease;
+}
+.venue-image-info {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  padding-right: 8px;
+  
+}
+
+.venue-image {
+  width: 120px;
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+}
+
+.venue-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.venue-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  width: 100%;
+}

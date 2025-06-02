@@ -36,7 +36,7 @@ function App() {
         <img src={MCLogo} className='mastercard-logo' alt='Mastercard logo' />
       </div>
       <div className='mweb-info-container2'>
-        <span className='title1'>Mastercard Collection</span>
+        <span className='title1'>The Mastercard Collection</span>
         <div style={{ height: '0px' }}></div>
         <div style={{ width: '60%', margin: '0 auto' }}>
           <span className='subheading3'>Experience the app on your phone</span>

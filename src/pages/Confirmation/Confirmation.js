@@ -7,6 +7,7 @@ import ReviewUserIcon from '../../assets/icons/user.svg';
 import MainHeader from '../../components/Header/MainHeader';
 import Notification from '../../components/AppNotification';
 import Gmail from '../../assets/images/gmail.png'
+import BackHeader from '../../components/Header/BackHeader';
 
 const ConfirmationPage = () => {
     const location = useLocation();
@@ -25,7 +26,7 @@ const ConfirmationPage = () => {
     return (
 
         <div className="page-content">
-            <MainHeader />
+      <BackHeader />
 
             <Notification
                 visible={showNotification}
@@ -80,7 +81,7 @@ const ConfirmationPage = () => {
                         <span className='subheading-bold'>Reservation</span>
                         <span className='subheading-bold'>$0.00</span>
                     </div>
-                    {/* <div style={{ textAlign: "center", marginTop: "24px" }}>
+                    <div style={{ textAlign: "center", marginTop: "24px" }}>
                         <Link to="/" style={{
                             display: 'inline-block',
                             marginTop: '20px',
@@ -93,7 +94,7 @@ const ConfirmationPage = () => {
                         }}>
                             Go back to Home Page
                         </Link>
-                    </div> */}
+                    </div>
 
                 </div>
             </div>

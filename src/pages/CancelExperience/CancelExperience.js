@@ -9,6 +9,7 @@ import SimpleDropdown from '../../components/SimpleDropDown';
 import CalendarIcon from '../../assets/icons/calendar-black.svg'
 import ClockIcon from '../../assets/icons/clock-black.svg'
 import UserIcon from '../../assets/icons/user-black.svg'
+import BackHeader from '../../components/Header/BackHeader';
 
 
 const CancelExperience = () => {
@@ -20,7 +21,7 @@ const CancelExperience = () => {
   return (
     <div className='page-content'>
       <div className='header-section'>
-        <MainHeader />
+<BackHeader />
         <img src={PeakBanner} className='main-banner' alt="Peak" />
       </div>
       <div className='feedback-container'>

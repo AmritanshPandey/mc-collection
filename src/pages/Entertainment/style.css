@@ -1,0 +1,17 @@
+.event-stage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px 20px;
+}
+
+.stage-image {
+    width: calc(50% - 8px);
+    text-align: center;
+}
+
+.e-banner {
+    width: 100%;
+    margin: 24px 0;
+}

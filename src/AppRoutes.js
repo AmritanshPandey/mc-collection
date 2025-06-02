@@ -9,6 +9,10 @@ import EmailView from './pages/EmailView';
 import CancelExperience from './pages/CancelExperience/CancelExperience';
 import Canceled from './pages/CancelExperience/Canceled';
 import EmailCancel from './pages/EmailView/EmailCancel';
+import Entertainment from './pages/Entertainment/Entertainment';
+import Travel from './pages/Travel/Travel';
+// import Concert from './pages/Entertainment/Experience/Concert';
+// import Venue from './pages/Entertainment/Experience/Venue';
 
 function NotFoundPage() {
   return (
@@ -45,6 +49,10 @@ function AppRoutes() {
         <Route path="/email-cancel" element={<EmailCancel />} />
         <Route path="/cancel" element={<CancelExperience />} />
         <Route path="/canceled" element={<Canceled />} />
+        <Route path="/entertainment" element={<Entertainment />} />
+        <Route path="/travel" element={<Travel />} />
+        {/* <Route path="/concert" element={<Concert />} />
+        <Route path="/venue" element={<Venue />} /> */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

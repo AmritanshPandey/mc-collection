@@ -19,7 +19,7 @@ const EmailCancel = () => {
             <div className="gmail-email-view">
                 <div className="gmail-toolbar">
 
-                    <img src={BackArrow} alt='icon' onClick={() => navigate(-1)}
+                    <img src={BackArrow} alt='icon'  onClick={() => navigate('/')}
                         style={{ cursor: 'pointer' }} />
                     <div className="toolbar-actions">
                         <img src={Archive} alt='icon' />

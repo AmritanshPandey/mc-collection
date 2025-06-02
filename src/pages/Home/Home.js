@@ -11,7 +11,7 @@ import "./style.css";
 import Footer from "../../components/Footer";
 
 const Home = () => {
-  const navigate = useNavigate();    // ✅ correct way to get navigate function
+  const navigate = useNavigate();    
 
   return (
     <div className='page-content'>
@@ -33,6 +33,7 @@ const Home = () => {
           image={TravelBanner}
           title="Travel"
           buttonText="Explore"
+            onButtonClick={() => navigate('/travel')}   
         />
         <CategoryBanner
           image={DiningBanner}
@@ -44,6 +45,7 @@ const Home = () => {
           image={EntertainementBanner}
           title="Entertainment"
           buttonText="Explore"
+            onButtonClick={() => navigate('/entertainment')}  
         />
       </div>
 

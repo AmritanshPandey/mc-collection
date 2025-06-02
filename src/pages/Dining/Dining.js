@@ -8,15 +8,19 @@ import { experienceItems, hotspotRestaurants, experienceRestaurants } from '../.
 import DiningFooter from '../../assets/images/dining-footer.png'
 import Footer from '../../components/Footer';
 import Spacer from '../../components/Spacer';
+import BackHeader from '../../components/Header/BackHeader';
 
 const Dining = () => {
   return (
     <div className='page-content'>
       <div className='header-section'>
-        <MainHeader />
+
+        <BackHeader />
         <img src={DinningBanner} className='main-banner' alt="Dining Banner" />
       </div>
-
+      <div className='carousel-heading-container'>
+        <span className='heading-medium'>Featured restaurants</span>
+      </div>
       {/* Experiences hero carousel */}
       <FeatureCardCarousel items={experienceItems} />
 

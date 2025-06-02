@@ -1,0 +1,241 @@
+.events,
+.venues,
+.faq {
+margin: 20px;
+}
+
+.event {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.event-date {
+  background: #eee;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.event-date .day {
+  font-weight: bold;
+}
+
+.event-info h3 {
+  margin: 4px 0;
+}
+
+.priceless {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+
+
+.note {
+  font-size: 14px;
+  color: #444;
+}
+
+.footer {
+  margin-top: 32px;
+}
+
+
+.footer-banner {
+  width: 100%;
+}
+
+
+.accordion {
+  width: 100%;
+  text-align: left;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-note {
+  margin-top: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 16px;
+}
+
+
+
+.footer-section {
+  margin: 20px 0;
+  background: var(--black-surface);
+  color: var(--white);
+  border-bottom: var(--grey-50) solid 1px;
+}
+
+.footer-info-container {
+  background: var(--black-surface);
+  color: var(--white);
+  margin-top: -20px;
+  padding: 20px;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-label {
+  font-size: 16px;
+}
+
+/* VenuePage.css */
+
+.venue-page {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.status-bar {
+  background-color: #006400;
+  color: white;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.venue-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tab-container {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-container button {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-container button.active {
+  border-color: #000;
+}
+
+.venue-main {
+  padding: 16px;
+}
+
+.events-section .event {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.events-section .event img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.events-section .event h4 {
+  margin: 8px 0 4px;
+}
+
+.events-section .event button {
+  margin-top: 4px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.events-list .event-day {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.event-date {
+  background: #eee;
+  text-align: center;
+  padding: 6px;
+  width: 50px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.event-date .month {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.event-date .day {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.popular-venues {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.venue-card {
+  text-align: center;
+}
+
+.venue-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.venue-footer {
+  background: #111;
+  color: white;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.footer-banner {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.faq-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.faq-item {
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.footer-note {
+  font-size: 12px;
+  line-height: 1.5;
+}

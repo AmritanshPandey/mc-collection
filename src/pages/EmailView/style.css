@@ -20,6 +20,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 999;
+  padding: 16px;
+
 }
 
 .toolbar-actions {
@@ -112,8 +118,8 @@
   background: var(--grey-50);
   padding: 16px;
   justify-content: flex-start;
-border-top-left-radius: 16px;
-border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   gap: 6px;
 }
 
@@ -190,15 +196,55 @@ border-top-right-radius: 16px;
   gap: 10px;
 }
 
-.email-actions button {
-  padding: 12px;
-  border-radius: 30px;
-  font-weight: 600;
+.email-actions .primary {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  font-weight: 500;
   font-size: 14px;
+  text-align: center;
   cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-text);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 16px;
+
 }
 
 
+.email-actions .disabled {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--grey-400);
+  color: var(--white-text);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 16px;
+
+}
+
+
+.email-actions .outline {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: white solid 1px;
+  color: var(--white-text);
+  border-radius: 50px;
+  padding: 12px 16px;
+  background-color: #00000000;
+
+}
 
 .help-link {
   font-size: 12px;

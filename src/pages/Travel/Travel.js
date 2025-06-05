@@ -29,18 +29,18 @@ const Travel = () => {
         <span className='heading-medium'>Exclusive travel benefits</span>
         <CategoryBanner
           image={LoungeBanner}
-          title="Lounge Access"
+          title="Lounge access"
           buttonText="Explore"
         />
         <CategoryBanner
           image={FastTrackBanner}
-          title="Fast Track"
+          title="Fast track"
           buttonText="Explore"
         />
 
         <CategoryBanner
           image={ClubBanner}
-          title="Dining Club"
+          title="Dining club"
           buttonText="Explore"
         />
       </div>

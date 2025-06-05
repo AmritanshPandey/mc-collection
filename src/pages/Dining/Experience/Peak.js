@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './style.css';
-import MainHeader from '../../../components/Header/MainHeader';
 import PeakBanner from '../../../assets/images/peak.png';
 import ActionCard from '../../../components/ActionCard';
 import Spacer from '../../../components/Spacer';

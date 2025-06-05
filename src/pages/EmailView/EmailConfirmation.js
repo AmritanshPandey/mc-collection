@@ -76,9 +76,12 @@ const EmailConfirmation = ({ reservation }) => {
 
           {/* Buttons */}
           <div className="email-actions">
-            <button className="primary" onClick={() => navigate('/cancel')}>
-              Cancel reservation
-            </button>
+          <button
+  className="primary"
+  onClick={() => navigate('/cancel', { state: reservation })}
+>
+  Cancel reservation
+</button>
             <button className="outline">Get directions</button>
             <button className="outline">Add to my calendar</button>
           </div>

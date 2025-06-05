@@ -10,12 +10,7 @@ margin: 20px;
   margin-bottom: 16px;
 }
 
-.event-date {
-  background: #eee;
-  padding: 8px;
-  border-radius: 6px;
-  text-align: center;
-}
+
 
 .event-date .day {
   font-weight: bold;
@@ -172,14 +167,7 @@ margin: 20px;
   padding: 12px 0;
 }
 
-.event-date {
-  background: #eee;
-  text-align: center;
-  padding: 6px;
-  width: 50px;
-  border-radius: 4px;
-  margin-right: 12px;
-}
+
 
 .event-date .month {
   font-size: 12px;

@@ -17,9 +17,9 @@ const Footer = () => {
           </div>
           <div className='footer-links-container'>
             <span className='body-medium'>Contact us</span>
-            <span className='body-medium'>Terms of Use</span>
+            <span className='body-medium'>Terms of use</span>
             <span className='body-medium'>About priceless™</span>
-            <span className='body-medium'>Privacy Notice</span>
+            <span className='body-medium'>Privacy notice</span>
             <span className='body-medium'>Mastercard.com</span>
             <span className='body-medium'>Manage cookies</span>
             <span className='body-medium'>Sitemap</span>

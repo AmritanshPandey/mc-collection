@@ -2,7 +2,7 @@ import './LandingPage.css'
 import AppUI1 from '../src/assets/images/iphone1.png'
 import AppUI2 from '../src/assets/images/iphone2.png'
 import MCLogo from '../src/assets/icons/mc-logo.svg'
-import QRCode from '../src/assets/images/qrcode.png'
+import QRCode from '../src/assets/images/qrcode.svg'
 
 function LandingPage() {
   return (

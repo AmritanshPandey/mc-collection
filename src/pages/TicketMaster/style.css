@@ -1,0 +1,790 @@
+.breadcrumbs {
+    font-size: 12px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+
+.event-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+
+}
+
+.event-time {
+    font-size: 13px;
+
+    margin-bottom: 12px;
+}
+
+.event-time a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
+.event-info-banner {
+    background: #f2f2f2;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+.venue-map {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.venue-images {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.switch-map {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+/* Ticket control buttons */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    margin: 20px;
+}
+
+.controls button {
+    flex: 1;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fee note */
+.fee-note {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+    margin: 16px 20px;
+}
+
+
+.vip-section {
+    background: #fff;
+
+    padding: 12px;
+}
+
+.vip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid #ffc800;
+    border-top: 1px solid var(--grey-200);
+    padding: 16px;
+
+}
+
+.vip-header a {
+    font-size: 13px;
+    color: #007aff;
+    text-decoration: none;
+}
+
+/* VIP options list */
+.vip-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-200);
+    padding: 16px;
+    background: #f9f9f9;
+}
+
+.vip-option strong {
+    font-size: 14px;
+    display: block;
+}
+
+.vip-option p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 14px;
+    color: #007aff;
+}
+
+.ticket-page-header {
+   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: var(--black-surface);
+  color: var(--white);
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-page {
+  padding-top: 175px; 
+}
+
+.ticket-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.back-navigation-ticketpage {
+    margin-bottom: 12px;
+    height: 24px;
+}
+
+
+
+.checkout-header {
+    background: var(--black-surface);
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.back-button {
+    cursor: pointer;
+    padding: 4px;
+}
+
+.event-title-checkout h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+.event-title-checkout p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Reservation */
+.checkout-reservation {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    gap: 12px;
+    justify-content: space-between;
+    background-color: #F6F6FB;
+}
+
+.stadium-img {
+    width: 150px;
+    border-radius: 4px;
+    background: #eee;
+}
+
+.reservation-detail {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.reserved-label {
+    font-weight: bold;
+    color: #444;
+}
+
+.reserved-info {
+    color: #333;
+}
+
+/* Info Text */
+.info-block {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #444;
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+/* VIP Card */
+.vip-checkout-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.vip-checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.vip-checkout-header .left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 200px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.ticket-count {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.vip-price {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.ticket-limit {
+    font-size: 12px;
+    color: #444;
+    font-weight: 500;
+}
+
+.ticket-limit a {
+    color: #0056cc;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.checkout-summary {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    max-width: 430px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.subtotal-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.ticket-summary {
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.next-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00884b;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.minus-button {
+    background: #727272;
+    display: flex;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.plus-button {
+    background: #0056cc;
+    display: flex;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.checkout-page {
+    padding-bottom: 120px;
+}
+
+/* === Login Page === */
+
+/* Header with time */
+.login-header {
+    background: #0070d2;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    position: relative;
+}
+
+.checkout-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.timer {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-container {
+    padding: 24px 20px;
+}
+
+/* Titles */
+.signin-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.signup-note {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.signup-note a {
+    color: #0070d2;
+    font-weight: 500;
+}
+
+/* Login Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    font-size: 14px;
+    margin: 10px 0 4px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #0070d2;
+    border-radius: 4px;
+    outline: none;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-input input {
+    width: 100%;
+    padding-right: 60px;
+}
+
+.show-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 13px;
+    transform: translateY(-50%);
+    color: #0070d2;
+    cursor: pointer;
+}
+
+/* Remember and Forgot */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0;
+    font-size: 13px;
+}
+
+.forgot-link {
+    color: #0070d2;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Signin Button */
+.signin-btn {
+    padding: 14px;
+    background: #0070d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Terms */
+.terms {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+.terms a {
+    color: #0070d2;
+    text-decoration: underline;
+}
+
+
+/* Confirmation Page */
+
+
+
+/* === HEADER BLOCK === */
+.checkout-header-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  background: var(--black-surface);
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.final-checkout-page {
+  padding-top: 120px; 
+}
+
+
+
+
+
+.checkout-timer {
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+
+}
+
+.checkout-timer span {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+}
+
+
+
+
+.timer-bubble {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.timer-bubble span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* === INFO CARD === */
+.checkout-info-card {
+    background: white;
+    margin: -20px 16px 12px;
+    padding: 16px;
+    border-radius: 12px;
+    border: solid var(--grey-200) 1px;
+}
+
+.checkout-info-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.event-datetime,
+.event-location,
+.event-seat-info {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.view-seats-link {
+    color: #0070d2;
+    font-size: 13px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.ticket-info-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    color: #000;
+}
+
+.info-detail {
+    font-size: 13px;
+    margin-top: 4px;
+    color: #666;
+}
+
+/* === PAYMENT SECTIONS === */
+.checkout-section {
+    padding: 16px;
+}
+
+.section-heading {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.checkout-detail {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.checkout-detail a {
+    color: #0056cc;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.ticket-info {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #444;
+}
+
+.white-box {
+    background: white;
+    border-radius: 10px;
+    margin: 12px 16px;
+ border: solid var(--grey-200) 1px;
+}
+
+.white-box h4 {
+    margin: 0 0 4px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.sub-text {
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+.body-text {
+    font-size: 13px;
+    color: #444;
+    margin-top: 6px;
+}
+
+.add-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.paypal-note {
+    font-size: 13px;
+    color: #333;
+}
+
+.terms {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 6px;
+}
+
+.terms a {
+    color: #0056cc;
+    text-decoration: underline;
+}
+
+.promo-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    margin-top: 12px;
+    color: #0056cc;
+    cursor: pointer;
+}
+
+/* === TOTAL + ORDER === */
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px 0;
+}
+
+.total-amount {
+    color: #000;
+}
+
+.line-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #333;
+    margin: 6px 0;
+}
+
+.cancel-order {
+    display: block;
+    font-size: 13px;
+    color: #0056cc;
+    text-align: right;
+    margin-top: 8px;
+}
+
+.fine-print {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.terms-checkbox {
+    margin: 12px 0;
+    font-size: 13px;
+    display: flex;
+    gap: 8px;
+    align-items: start;
+}
+
+.terms-checkbox a {
+    color: #0056cc;
+    text-decoration: underline;
+}
+
+.place-order-btn {
+    background: #00884b;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.bottom-note {
+    font-size: 11px;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* === ICONS === */
+.icon16 {
+    width: 16px;
+    height: 16px;
+}
+
+.icon20 {
+    width: 20px;
+    height: 20px;
+}
+
+.icon24 {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

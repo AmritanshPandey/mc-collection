@@ -24,9 +24,9 @@ export const experienceItems = [
 ];
 
 export const entertainmentItems = [
-  { image: Artist1, title: 'Celestia: Starlight Harmony Tour', link: '/experience/celestia' }, // 33 chars
-  { image: Artist2, title: 'NovaRise: Symphony of the Skies', link: '/experience/novarise' }, // 34 chars
-  { image: Artist3, title: 'Echo Drive: Beyond the Horizon', link: '/experience/echodrive' },  // 33 chars
+  { image: Artist1, title: 'Celestia: Starlight Harmony Tour', link: '/concert' }, 
+  { image: Artist2, title: 'NovaRise: Symphony of the Skies', link: '/experience/novarise' }, 
+  { image: Artist3, title: 'Echo Drive: Beyond the Horizon', link: '/experience/echodrive' },  
 ];
 
 export const hotspotRestaurants = [

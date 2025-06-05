@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 import InfoCard from '../../components/InfoCard';
-import LocationIcon from '../../assets/icons/location.svg';
+import LocationIcon from '../../assets/icons/map-pin-black.svg';
 import PeopleIcon from '../../assets/icons/people.svg';
 import ClockIcon from '../../assets/icons/clock.svg';
 import ReservationForm from '../ReservationForm';

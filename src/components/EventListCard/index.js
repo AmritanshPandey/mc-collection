@@ -1,7 +1,14 @@
 import "./style.css";
+import { useNavigate } from 'react-router-dom';
 import PricelessLogo from '../../assets/icons/priceless-logo.svg'
 import OpenNew from '../../assets/icons/open.svg'
 const EventListCard = ({ month, date, year, location, time, artists, ticketType, buttonText }) => {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/ticketmaster');
+    };
     return (
         <div>
             <div className="event">
@@ -21,12 +28,12 @@ const EventListCard = ({ month, date, year, location, time, artists, ticketType,
                 <div>
                     <img src={PricelessLogo} className="priceles-logo" alt="priceless" />
                     <div className="priceless">{ticketType}</div>
-                <div className="event-button-container">
-                    <button>
-                        {buttonText}
-                        <img src={OpenNew} className="icon16" alt="icon" />
-                    </button>
-                </div>
+                    <div className="event-button-container">
+                        <button onClick={handleClick}>
+                            {buttonText}
+                            <img src={OpenNew} className="icon16" alt="icon" />
+                        </button>
+                    </div>
 
                 </div>
             </div>

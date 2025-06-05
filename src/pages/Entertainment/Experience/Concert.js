@@ -13,12 +13,13 @@ import EventListCard from '../../../components/EventListCard';
 import PlusWhite from '../../../assets/icons/plus.svg'
 import "./style.css";
 import PopularVenueCard from '../../../components/PopularVenueCard';
+import BackHeader from '../../../components/Header/BackHeader';
 
 const Concert = () => {
     return (
         <div className='page-content'>
             <div className='header-section'>
-                <MainHeader />
+             <BackHeader />
                 <img src={ConcertBanner} className='main-banner' alt="Peak" />
             </div>
 

@@ -11,7 +11,11 @@ import Canceled from './pages/CancelExperience/Canceled';
 import EmailCancel from './pages/EmailView/EmailCancel';
 import Entertainment from './pages/Entertainment/Entertainment';
 import Travel from './pages/Travel/Travel';
-// import Concert from './pages/Entertainment/Experience/Concert';
+import Concert from './pages/Entertainment/Experience/Concert';
+import TicketPage from './pages/TicketMaster';
+import TicketCheckout from './pages/TicketMaster/TicketCheckout';
+import TicketLoginPage from './pages/TicketMaster/TicketLogin';
+import FinalTicketCheckout from './pages/TicketMaster/TicketConfirmation';
 // import Venue from './pages/Entertainment/Experience/Venue';
 
 function NotFoundPage() {
@@ -51,8 +55,12 @@ function AppRoutes() {
         <Route path="/canceled" element={<Canceled />} />
         <Route path="/entertainment" element={<Entertainment />} />
         <Route path="/travel" element={<Travel />} />
-        {/* <Route path="/concert" element={<Concert />} />
-        <Route path="/venue" element={<Venue />} /> */}
+        <Route path="/concert" element={<Concert />} />
+        {/* <Route path="/venue" element={<Venue />} /> */}
+        <Route path="/ticketmaster" element={<TicketPage />} />
+        <Route path="/ticket-checkout" element={<TicketCheckout />} />
+        <Route path="/ticket-login" element={<TicketLoginPage />} />
+        <Route path="/ticket-confirmation" element={<FinalTicketCheckout />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

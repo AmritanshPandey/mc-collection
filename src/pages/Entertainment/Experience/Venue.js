@@ -33,9 +33,9 @@ const Venue = () => {
         {activeTab === 'presale' && (
           <div className="events-section">
             <div className="event">
-              <img src="/assets/beyonce.jpg" alt="Beyonce" />
+              <img src="/assets/beyonce.jpg" alt="Celestia" />
               <div>
-                <h4>Beyonce: Cowboy Carter Tour</h4>
+                <h4>Celestia: Starlight Harmony Tour</h4>
                 <p>Wed, Jun 5, 2025</p>
                 <button>Buy Tickets</button>
               </div>
@@ -52,7 +52,7 @@ const Venue = () => {
                 <span className="day">05</span>
               </div>
               <div className="event-info">
-                <h4>Beyonce: Cowboy Carter Tour</h4>
+                <h4>Celestia: Starlight Harmony Tour</h4>
                 <p>8:00 PM • Allianz Amphitheater</p>
               </div>
             </div>

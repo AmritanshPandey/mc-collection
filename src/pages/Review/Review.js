@@ -64,10 +64,10 @@ const ReviewPage = () => {
               {activeStep === 1 && (
                 <form className="guest-form">
                   <label>Guest Name</label>
-                  <div className="form-group">
-                    <input type="text" placeholder="First Name" defaultValue="John" />
-                    <input type="text" placeholder="Last Name" defaultValue="Smith" />
-                  </div>
+                
+                    <input type="text" placeholder="First Name" defaultValue="John Smith" />
+                  
+             
                   <label>Email</label>
                   <input type="email" placeholder="Email" defaultValue="john.smith@example.com" />
                   <input type="email" placeholder="Confirm email" defaultValue="john.smith@example.com" />

@@ -7,6 +7,7 @@ import MCLogo from './assets/icons/mc-logo.svg';
 import ShareIcon from './assets/icons/ios-share.svg';
 import ArrowDown from './assets/icons/arrow-down.svg';
 import ScrollToTop from './components/ScrollToTop';
+import AddIcon from '../src/assets/icons/plus-box.svg'
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
@@ -59,6 +60,7 @@ function App() {
           </div>
           <div>
             <span className='subheading'>then tap “Add to home screen.”</span>
+            
           </div>
         </div>
       </div>
